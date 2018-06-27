@@ -1,0 +1,108 @@
+[
+  {
+    "uri": "features/take_home_test.feature",
+    "id": "enrolling-in-a-course",
+    "keyword": "Feature",
+    "name": "Enrolling in a course",
+    "description": "  as a user of google search\n  I want to be able to get search results for Paxos Bankchain\n  So any potential customer can get information about Paxos Bankchain",
+    "line": 1,
+    "elements": [
+      {
+        "id": "enrolling-in-a-course;logged-in",
+        "keyword": "Scenario",
+        "name": "Logged in",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1055368619
+            },
+            "status": "passed",
+            "duration": 1055368619
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in on the Homepage",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3859469610
+            },
+            "status": "passed",
+            "duration": 3859469610
+          },
+          {
+            "keyword": "When ",
+            "name": "I select the featured course",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83618673
+            },
+            "status": "passed",
+            "duration": 83618673
+          },
+          {
+            "keyword": "And ",
+            "name": "I complete the course",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8340138383
+            },
+            "status": "passed",
+            "duration": 8340138383
+          },
+          {
+            "keyword": "Then ",
+            "name": "the course should show 100% complete",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/search_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26347831
+            },
+            "status": "passed",
+            "duration": 26347831
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177296474
+            },
+            "status": "passed",
+            "duration": 177296474
+          }
+        ],
+        "status": "passed",
+        "duration": 13542239590
+      }
+    ],
+    "status": "working",
+    "duration": 13542239590
+  }
+]
