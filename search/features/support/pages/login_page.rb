@@ -1,7 +1,6 @@
-class LoginPage
-  include PageObject
+class LoginPage < SitePrism::Page
 
-    text_field(:email, id: "user_email")
-    text_field(:password, id: "user_password")
-    button(:login_button, class: "btn btn-primary btn-md login-button")
+  element :email, '#user_email'
+  element :password, '#user_password'
+  element :login_button, :xpath, "//input[@name='commit']"
 end

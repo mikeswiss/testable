@@ -4,27 +4,38 @@
     "id": "enrolling-in-a-course",
     "keyword": "Feature",
     "name": "Enrolling in a course",
-    "description": "  as a user of google search\n  I want to be able to get search results for Paxos Bankchain\n  So any potential customer can get information about Paxos Bankchain",
+    "description": "  as a user of Teachable\n  I want to be able to go through all lectures and complete a course\n  So any potential customer can learn from Teachable",
     "line": 1,
     "elements": [
       {
-        "id": "enrolling-in-a-course;logged-in",
+        "id": "enrolling-in-a-course;complete-course",
         "keyword": "Scenario",
-        "name": "Logged in",
+        "name": "Complete Course",
         "description": "",
         "line": 7,
         "type": "scenario",
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:3"
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1055368619
+              "duration": 27135
             },
             "status": "passed",
-            "duration": 1055368619
+            "duration": 27135
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12095
+            },
+            "status": "passed",
+            "duration": 12095
           }
         ],
         "steps": [
@@ -33,76 +44,79 @@
             "name": "I am logged in on the Homepage",
             "line": 8,
             "match": {
-              "location": "features/step_definitions/search_steps.rb:46"
+              "location": "features/step_definitions/steps.rb:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3859469610
+              "duration": 9566372827
             },
             "status": "passed",
-            "duration": 3859469610
+            "duration": 9566372827
           },
           {
             "keyword": "When ",
             "name": "I select the featured course",
             "line": 9,
             "match": {
-              "location": "features/step_definitions/search_steps.rb:5"
+              "location": "features/step_definitions/steps.rb:6"
             },
             "result": {
               "status": "passed",
-              "duration": 83618673
+              "duration": 297189224
             },
             "status": "passed",
-            "duration": 83618673
+            "duration": 297189224
           },
           {
             "keyword": "And ",
             "name": "I complete the course",
             "line": 10,
+            "output": [
+              "4"
+            ],
             "match": {
-              "location": "features/step_definitions/search_steps.rb:11"
+              "location": "features/step_definitions/steps.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 8340138383
+              "duration": 6255297155
             },
             "status": "passed",
-            "duration": 8340138383
+            "duration": 6255297155
           },
           {
             "keyword": "Then ",
             "name": "the course should show 100% complete",
             "line": 11,
             "match": {
-              "location": "features/step_definitions/search_steps.rb:33"
+              "location": "features/step_definitions/steps.rb:30"
             },
             "result": {
               "status": "passed",
-              "duration": 26347831
+              "duration": 18134845
             },
             "status": "passed",
-            "duration": 26347831
+            "duration": 18134845
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:14"
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 177296474
+              "duration": 67414528
             },
             "status": "passed",
-            "duration": 177296474
+            "duration": 67414528
           }
         ],
         "status": "passed",
-        "duration": 13542239590
+        "duration": 16204447809
       }
     ],
     "status": "working",
-    "duration": 13542239590
+    "duration": 16204447809
   }
 ]

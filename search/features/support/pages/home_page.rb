@@ -1,9 +1,7 @@
-class HomePage
-  include PageObject
+class HomePage < SitePrism::Page
+  set_url 'http://takehome.zeachable.com'
 
-    page_url "http://takehome.zeachable.com"
-
-    a(:login, href: "/sign_in")
-    div(:featured_course, class: "course-box-image-container")
-    div(:take_home_course, text: "take home test")
+  element :login, :xpath, "//a[@href='/sign_in']"
+  element :featured_course, '.course-box-image-container'
+  element :take_home_course, '.course-listing-title'
 end

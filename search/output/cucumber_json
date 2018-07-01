@@ -4,24 +4,33 @@
     "id": "enrolling-in-a-course",
     "keyword": "Feature",
     "name": "Enrolling in a course",
-    "description": "  as a user of google search\n  I want to be able to get search results for Paxos Bankchain\n  So any potential customer can get information about Paxos Bankchain",
+    "description": "  as a user of Teachable\n  I want to be able to go through all lectures and complete a course\n  So any potential customer can learn from Teachable",
     "line": 1,
     "elements": [
       {
-        "id": "enrolling-in-a-course;logged-in",
+        "id": "enrolling-in-a-course;complete-course",
         "keyword": "Scenario",
-        "name": "Logged in",
+        "name": "Complete Course",
         "description": "",
         "line": 7,
         "type": "scenario",
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:3"
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:13"
             },
             "result": {
               "status": "passed",
-              "duration": 968377270
+              "duration": 27135
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12095
             }
           }
         ],
@@ -31,11 +40,11 @@
             "name": "I am logged in on the Homepage",
             "line": 8,
             "match": {
-              "location": "features/step_definitions/search_steps.rb:45"
+              "location": "features/step_definitions/steps.rb:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3527033281
+              "duration": 9566372827
             }
           },
           {
@@ -43,23 +52,26 @@
             "name": "I select the featured course",
             "line": 9,
             "match": {
-              "location": "features/step_definitions/search_steps.rb:5"
+              "location": "features/step_definitions/steps.rb:6"
             },
             "result": {
               "status": "passed",
-              "duration": 74393428
+              "duration": 297189224
             }
           },
           {
             "keyword": "And ",
             "name": "I complete the course",
             "line": 10,
+            "output": [
+              "4"
+            ],
             "match": {
-              "location": "features/step_definitions/search_steps.rb:11"
+              "location": "features/step_definitions/steps.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 5210309472
+              "duration": 6255297155
             }
           },
           {
@@ -67,22 +79,22 @@
             "name": "the course should show 100% complete",
             "line": 11,
             "match": {
-              "location": "features/step_definitions/search_steps.rb:32"
+              "location": "features/step_definitions/steps.rb:30"
             },
             "result": {
               "status": "passed",
-              "duration": 26215672
+              "duration": 18134845
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:14"
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 180683587
+              "duration": 67414528
             }
           }
         ]

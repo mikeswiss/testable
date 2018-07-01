@@ -4,7 +4,7 @@ Feature: Enrolling in a course
   I want to be able to go through all lectures and complete a course
   So any potential customer can learn from Teachable
 
-  Scenario: Logged in
+  Scenario: Complete Course
     Given I am logged in on the Homepage
     When I select the featured course
     And I complete the course

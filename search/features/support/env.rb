@@ -1,16 +1,17 @@
-require 'page-object'
 require 'data_magic'
 require 'byebug'
-require 'net/http'
-World(PageObject::PageFactory)
+require 'capybara'
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'site_prism'
 
-if ENV['HEADLESS'] == 'true'
-  require 'headless'
 
-  headless = Headless.new
-  headless.start
-
-  at_exit do
-    headless.destroy
-  end
+Capybara.configure do |config|
+  config.default_driver = :selenium
+  config.app_host   = 'http://www.google.com'
 end
+
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
+
+Capybara.ignore_hidden_elements = false
