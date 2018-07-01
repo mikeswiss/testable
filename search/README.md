@@ -7,5 +7,4 @@ ReadMe
 `rake`
 #### will run the tests
 `rake generate`
-##### will generate and place a report in the /reports directory
-##### from the json output of the tests that just ran
+##### will generate and place a report in the /reports directory from the json output of the tests that just ran
