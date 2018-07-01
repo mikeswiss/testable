@@ -100,5 +100,8 @@ DEPENDENCIES
   selenium-webdriver
   site_prism (= 2.14)
 
+RUBY VERSION
+   ruby 2.4.1p111
+
 BUNDLED WITH
    1.16.2
